@@ -13,4 +13,4 @@ RUN echo 'FLOW="$Flow"' > /run.sh \
     echo 'sleep 5' >> /run.sh \
     echo 'done' >> /run.sh
 RUN	echo chmod +x /run.sh
-ENTRYPOINT /root/run.sh
+ENTRYPOINT /run.sh
