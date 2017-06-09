@@ -2,7 +2,7 @@
 
 pull docker
 -----------
-     docker poll echochio/ntopng
+     docker pull echochio/ntopng
  
 exec docker  echochio/ntopng
 -----------
