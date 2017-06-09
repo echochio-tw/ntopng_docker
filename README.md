@@ -20,4 +20,4 @@ exec docker  echochio/ntopng
 
  Run docker  
 
-     docker run -d -e Flow=9996 -e Local=192.168.0.0/16 -p 3000:3000 -p 9996:9996/udp --name=ntopng echochio/ntopng
+     docker run -d -e Flow=9996 -e Local=192.168.0.0/16 -p 192.168.0.70:3000:3000 -p 9996:9996/udp -v /log:/var/log/ntopng -v /data:/var/tmp/ntopng --name=ntopng echochio/ntopng
